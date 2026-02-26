@@ -46,9 +46,10 @@
 
       <div>
         <label for="size">T-shirt Size:</label>
-        <select id="size" name="size">
+        <select id="size" name="size" required>
+          <option value="" disabled selected hidden>Choose a size...</option>
           <option value="s">Small</option>
-          <option value="m" selected>Medium</option>
+          <option value="m">Medium</option>
           <option value="l">Large</option>
         </select>
       </div>
