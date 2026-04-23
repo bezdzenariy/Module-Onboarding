@@ -13,51 +13,69 @@
   <header>
     <h1>Product Pick</h1>
   </header>
+  
   <main>
     <form action="#" method="post">
-      <div>
-        <label for="name">Customer's Name:</label>
-        <input type="text" id="name" name="name" required minlength="2">
-      </div>
-
-      <div>
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="user-email" required>
-      </div>
-
+      
+      <!-- group 1: Client info -->
       <fieldset>
-        <legend>Pick a T-shirt Color:</legend>
-
+        <legend>Customer Information</legend>
+        
         <div>
-          <input type="radio" id="red" name="color" value="red" required>
-          <label for="red">Red</label>
+          <label for="name">Customer's Name:</label>
+          <input type="text" id="name" name="name" required minlength="2">
         </div>
 
         <div>
-          <input type="radio" id="blue" name="color" value="blue">
-          <label for="blue">Blue</label>
-        </div>
-
-        <div>
-          <input type="radio" id="green" name="color" value="green">
-          <label for="green">Green</label>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="user-email" required>
         </div>
       </fieldset>
 
-      <div>
-        <label for="size">T-shirt Size:</label>
-        <select id="size" name="size" required>
-          <option value="" disabled selected hidden>Choose a size...</option>
-          <option value="s">Small</option>
-          <option value="m">Medium</option>
-          <option value="l">Large</option>
-        </select>
-      </div>
+      <!-- group 2: T-shirt parameters -->
+      <fieldset>
+        <legend>T-shirt Options</legend>
+        
+        <!-- group 2.1: color -->
+        <fieldset>
+          <legend>Pick a T-shirt Color:</legend>
+
+          <div>
+            <input type="radio" id="red" name="color" value="red" required>
+            <label for="red">Red</label>
+          </div>
+
+          <div>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Blue</label>
+          </div>
+
+          <div>
+            <input type="radio" id="green" name="color" value="green">
+            <label for="green">Green</label>
+          </div>
+        </fieldset>
+
+        <!-- group 2.2: size -->
+        <div>
+          <label for="size">T-shirt Size:</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected hidden>Choose a size...</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+      </fieldset>
 
       <button type="submit">Place Order</button>
 
     </form>
   </main>
+  
   <footer>
     <h2>By Nik</h2>
   </footer>
